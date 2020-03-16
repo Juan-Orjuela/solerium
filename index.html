@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  
+  <script src="js/modernizr.js"></script>
+  <title>SOLERIUM</title>
+</head>
+
+<body id="sl-home" style="background-color: #C5C8CD">
+  <!--Contenido del slide-->
+  <main>
+    <div class="cd-index cd-main-content">
+      <div>
+        <!-- Inicio contenido -->
+        <div class="sl-cont">
+          <div class="sl-home">
+            <div class="sl-f1 sl-fl">
+              <h1>SOLERIUM <img src="img/logo-solerium.png" alt="SOLERIUM"></h1>
+              <span>@gruposolerium</span>
+              <span>#vivosolerium</span>
+            </div>
+            <div class="sl-f2 sl-fl">
+              <nav>
+                <ul>
+                  <li><a href="nosotros.html">NOSOTROS</a><span></span></li>
+                  <li><a href="venta.html">EN VENTA</a><span></span></li>
+                  <li><a href="desarrollados.html">DESARROLLADOS</a><span></span></li>
+                  <li><a href="proximos.html">PRÓXIMOS</a><span></span></li>
+                </ul>
+              </nav>
+            </div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          
+        </div>
+
+        <button id="sl-btn" class="sl-nav-btn hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <nav class="sl-main-nav">
+          <ul>
+            <li><a class="actual" href="index.html" data-type="page-transition">INICIO</a></li>
+            <li><a href="nosotros.html" data-type="page-transition">NOSOTROS</a></li>
+            <li><a href="venta.html" data-type="page-transition">EN VENTA</a></li>
+            <li><a href="desarrollados.html" data-type="page-transition">DESARROLLADOS</a></li>
+            <li><a href="proximos.html" data-type="page-transition">PRÓXIMOS</a></li>
+            
+          </ul>
+        </nav>
+        <div class="sl-overlay"></div>
+
+        <!-- Fin contenido -->
+      </div>
+    </div>
+  </main>
+  <div class="tr-overlay"></div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/interactividad.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script>
+    // Create a timeline with default parameters
+    var tl = anime.timeline({
+      easing: 'linear'
+    });
+    
+    // Add children
+    tl
+    .add({
+        targets: 'main',
+        opacity: [0, 1],
+        duration: 800,
+        delay: 500
+      })
+      
+      
+      .add({
+        targets: 'h1',
+        opacity: [0, 1],
+        translateX: [-30, 0],
+        duration: 500
+      })
+      .add({
+        targets: '.sl-f2 li span',
+        translateX: ['-100%', 0],
+        duration: 800,
+        easing: 'easeOutQuart',
+        delay: anime.stagger(300)
+      }, '-=600')
+      .add({
+        targets: '.sl-f2 li a',
+        opacity: [0, 1],
+        duration: 600,
+        delay: anime.stagger(300)
+      }, '-=800')
+      .add({
+        targets: '.sl-f1 span',
+        opacity: [0, 1],
+        duration: 600,
+        delay: anime.stagger(300)
+      }, '-=1200')
+      .add({
+        targets: '.dot',
+        opacity: [0, 1],
+        duration: 600,
+        delay: anime.stagger(300)
+      }, '-=400')
+      ;
+  </script>
+</body>
+
+</html>
