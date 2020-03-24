@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/modernizr.js"></script>
+  <title>SOLERIUM</title>
+</head>
+
+<body id="sl-nosotros" style="background-color: #f6a92f">
+  <!--Contenido del slide-->
+  <main>
+    <div class="cd-index cd-main-content">
+      <div>
+        <!-- Inicio contenido -->
+        <div class="sl-cont">
+          <span class="cornisa">Nosotros</span>
+          <div class="contenido">
+            <div class="sl-slider-ap">
+              <!--Slide 1-->
+              <div class="sl-slide-ap">
+                <h2>Nosotros</h2>
+                <div class="sl-fl">
+                  <div class="col-1">
+                    <p>Solerium es una empresa constituida en el año 2008, con un equipo de trabajo que cuenta con mas
+                      de 35 años de experiencia en el sector inmobiliario. Nuestro propósito es cumplir el sueño de
+                      nuestros compradores:</p>
+                    <ul>
+                      <li>Trasformando ideas y necesidades en soluciones inteligentes.</li>
+                      <li>Usando el diseño y la innovación.</li>
+                      <li>Impactando positivamente la comunidad donde participamos.</li>
+                      <li>Ofreciendo una inversión de largo plazo; conﬁable y rentable.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--Slide 2-->
+              <div class="sl-slide-ap">
+                <h2>Propósito</h2>
+                <div class="sl-fl">
+                  <div class="col-1">
+                    <p>En Solerium estamos comprometidos en redeﬁnir los convencionalismos del sector inmobiliario
+                      mediante una oferta constante de proyectos innovadores y visionarios, así, mejorar la vida de las
+                      personas ofreciendo la posibilidad de tener una vida urbana y moderna mas amable, impactando su
+                      entorno, y elevando el nivel de diseño arquitectónico en las ciudades.</p>
+                  </div>
+                  <div class="col-2">
+                    <span>
+                      Relaciones de largo alcance, ese es nuestro propósito y nuestra visión.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!--Slide 3-->
+              <div class="sl-slide-ap">
+                <h2>Personal</h2>
+                <div class="sl-fl">
+                  <div class="col-1">
+                    <p>Integramos a lo largo de los proyectos, a los mejores profesionales en sus áreas, contando así
+                      con un equipo multidisciplinario de diseñadores, arquitectos, ingenieros, comerciales y una red de
+                      aliados que nos permite estar siempre un paso delante de las tendencias, garantizando los mas
+                      altos estándares en cada proyecto.
+                    </p>
+                    <p>Construir, es lo que mejor sabemos hacer, nos apasiona encontrar oportunidad en la adversidad, ir
+                      más allá y cimentar en la construcción de los sueños de cada uno de nuestros clientes.</p>
+                  </div>
+                  <div class="col-2">
+                    <span>Diseño de calidad en todo momento.</span>
+                  </div>
+                </div>
+              </div>
+              <!--Slide 4-->
+              <div class="sl-slide-ap">
+                <h2>Construimos</h2>
+                <div class="sl-fl">
+                  <div class="col-1">
+                    <p>Como desarrolladores coordinamos todas las actividades de un proyecto; desde la concepción de la
+                      idea, hasta la entrega y/o administración del inmueble. Dirigimos el trabajo de todos los
+                      participantes y aliados en tareas como; adquisición y/o incorporación de terrenos, diseño
+                      urbanístico y arquitectónico, construcción, administración y venta, garantizando una ejecución
+                      coordinada y eﬁciente.
+                    </p>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="slide-footer">
+              <span>| Grupo <span>Solerium</span></span>
+              <span>@gruposolerium</span>
+              <span>#vivosolerium</span>
+
+            </div>
+          </div>
+          <a href="index.html" class="sl-volver"><img src="img/f-blanca.png" alt="Volver"></a>
+          <span class="credito">Proyecto Torre Barcelona Centro</span>
+
+        </div>
+
+        <button id="sl-btn" class="sl-nav-btn hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <nav class="sl-main-nav">
+          <ul>
+            <li><a href="index.html" data-type="page-transition">INICIO</a></li>
+            <li><a class="actual" href="nosotros.html" data-type="page-transition">NOSOTROS</a></li>
+            <li><a href="venta.html" data-type="page-transition">EN VENTA</a></li>
+            <li><a href="desarrollados.html" data-type="page-transition">DESARROLLADOS</a></li>
+            <li><a href="proximos.html" data-type="page-transition">PRÓXIMOS</a></li>
+
+          </ul>
+        </nav>
+        <div class="sl-overlay"></div>
+
+        <!-- Fin contenido -->
+      </div>
+    </div>
+  </main>
+  <div class="tr-overlay"></div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/interactividad.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script>
+    // Create a timeline with default parameters
+    var tl = anime.timeline({
+      easing: 'linear'
+    });
+
+    // Add children
+    tl.add({
+        targets: 'main',
+        opacity: [0, 1],
+        duration: 800,
+        delay: 800
+      });
+    //Slider
+    $('.sl-slider-ap').slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      fade:true,
+      arrows:false
+    });
+  </script>
+</body>
+
+</html>
