@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/menu.css">
+  
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/modernizr.js"></script>
+  <title>SOLERIUM | PROYECTOS EN VENTA</title>
+</head>
+
+<body id="sl-venta" style="background-color: #3C464C">
+  <!--Contenido del slide-->
+  <main>
+    <div class="bg-cont">
+      <div class="bg-img"></div>
+    </div>
+    <div class="cd-index cd-main-content">
+      <div>
+        <!-- Inicio contenido -->
+        <div class="sl-cont">
+          <span class="cornisa">En venta</span>
+          <div class="contenido">
+            <ul>
+              <li><a href="">TORRE BARCELONA CENTRO</a></li>
+              <li><a href="">TORRE BARCELONA CHÍA</a></li>
+              <li><a href="">DUO 33 TEUSAQUILLO</a></li>
+              <li><a href="">SMART LIVING 54</a></li>
+              <li><a href="">SMART LIVING 58</a></li>
+              <li><a href="">MONCALIERI</a></li>
+              <li><a href="">SENDEROS DE LA SIERRA</a></li>
+              <li><a href="">ALUNA</a></li>
+              <li><a href="">SOY 21</a></li>
+              <li><a href="">RIO</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          <a href="index.html" class="sl-volver"><img src="img/f-blanca.png" alt="Volver"></a>
+          <span class="credito">Proyecto Aluna</span>
+
+        </div>
+
+        <button id="sl-btn" class="sl-nav-btn hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <nav class="sl-main-nav">
+          <ul>
+            <li><a href="index.html" data-type="page-transition">INICIO</a></li>
+            <li><a href="nosotros.html" data-type="page-transition">NOSOTROS</a></li>
+            <li><a class="actual" href="venta.html" data-type="page-transition">EN VENTA</a></li>
+            <li><a href="desarrollados.html" data-type="page-transition">DESARROLLADOS</a></li>
+            <li><a href="proximos.html" data-type="page-transition">PRÓXIMOS</a></li>
+
+          </ul>
+        </nav>
+        <div class="sl-overlay"></div>
+
+        <!-- Fin contenido -->
+      </div>
+    </div>
+  </main>
+  <div class="tr-overlay"></div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-2.1.1.js"></script>
+  
+  <script src="js/interactividad.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script>
+    
+    // Create a timeline with default parameters
+    var tl = anime.timeline({
+      easing: 'linear'
+    });
+
+    // Add children
+    tl.add({
+        targets: 'main',
+        opacity: [0, 1],
+        duration: 800,
+        delay: 800
+      });
+    
+    
+  </script>
+</body>
+
+</html>

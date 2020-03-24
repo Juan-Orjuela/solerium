@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/tabby-ui.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/modernizr.js"></script>
+  <title>SOLERIUM | TORRE BARCELONA CENTRO</title>
+</head>
+
+<body id="sl-py-tbcen" class="sl-proyecto" style="background-color: white">
+  <!--Contenido del slide-->
+  <main>
+    
+    <div class="cd-index cd-main-content">
+      <div>
+        <!-- Inicio contenido -->
+        <div class="sl-cont">
+          <span class="cornisa">En venta</span>
+          <div class="contenido">
+
+            <div class="sl-fl-gran">
+            <!-- Columna 1 -->
+            <div class="col-1">
+              <h1>Torre Barcelona</h1>
+              <p class="desc">Un ediﬁcio de uso mixto ubicado en el centro de Bogotá</p>
+              <div class="sl-fl">
+                <div class="cont-metros">
+                  <h3>Áreas</h3>
+                  <ul>
+                    <li>Área común 1</li>
+                    <li>Área común 2</li>
+                    <li>Área común 3</li>
+                  </ul>
+                </div>
+                <div class="cont-area">
+                  <h3>Área</h3>
+                  <span>29.600 m <sup>2</sup></span>
+                </div>
+                <!-- <div class="cont-valor">
+                  <h3>Desde</h3>
+                  <span>$360.000.000</span>
+                </div>-->
+              </div>
+              <div class="ubicacion">
+                <p>Cra 5 # 20 - 39 (Centro)</p>
+                <p>Bogotá, Colombia (2014 - 2019)</p>
+              </div>
+            </div>
+            <!-- Columna 2 -->
+            <div class="col-2">
+              <ul id="tab-nav" data-tabs>
+                <li><a class="pesti" data-tabby-default href="#fachadas">Fachadas</a></li>
+                <li><a class="pesti" href="#zonas">Zonas comunes</a></li>
+                <li><a class="pesti" href="#plantas">Plantas</a></li>
+              </ul>
+              
+              <div id="fachadas">
+                <div class="slider-proyectos">
+                  <div class="slide slide-1">
+                    <img src="img/fondo-nosotros.jpg" alt="Fondo prueba">
+                  </div>
+                  <div class="slide slide-2">
+                    <img src="img/fondo-nosotros.jpg" alt="Fondo prueba">
+                  </div>
+                  <div class="slide slide-3">
+                    <img src="img/fondo-nosotros.jpg" alt="Fondo prueba">
+                  </div>
+                </div>
+              </div>
+              <div id="zonas">
+                <div class="slider-proyectos">
+                  <div class="slide slide-1">
+                    <img src="img/fondo-ventas.jpg" alt="Fondo prueba">
+                  </div>
+                  <div class="slide slide-2">
+                    <img src="img/fondo-nosotros.jpg" alt="Fondo prueba">
+                  </div>
+                  <div class="slide slide-3">
+                    <img src="img/fondo-nosotros.jpg" alt="Fondo prueba">
+                  </div>
+                </div>
+              </div>
+              <div id="plantas">
+                <div class="slider-proyectos">
+                  <div class="slide slide-1">
+                    <img src="img/fondo-nosotros.jpg" alt="Fondo prueba">
+                  </div>
+                  <div class="slide slide-2">
+                    <img src="img/fondo-nosotros.jpg" alt="Fondo prueba">
+                  </div>
+                  <div class="slide slide-3">
+                    <img src="img/fondo-nosotros.jpg" alt="Fondo prueba">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+          <a href="index.html" class="sl-volver"><img src="img/f-blanca.png" alt="Volver"></a>
+          <!-- Navegacion -->
+          <div class="proy-nav">
+            <a href="#" class="sl-prev"></a>
+            <a href="venta.html" class="sl-proy"></a>
+            <a href="#" class="sl-next"></a>
+          </div> 
+        </div>
+
+        <button id="sl-btn" class="sl-nav-btn hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <nav class="sl-main-nav">
+          <ul>
+            <li><a href="index.html" data-type="page-transition">INICIO</a></li>
+            <li><a href="nosotros.html" data-type="page-transition">NOSOTROS</a></li>
+            <li><a class="actual" href="venta.html" data-type="page-transition">EN VENTA</a></li>
+            <li><a href="desarrollados.html" data-type="page-transition">DESARROLLADOS</a></li>
+            <li><a href="proximos.html" data-type="page-transition">PRÓXIMOS</a></li>
+
+          </ul>
+        </nav>
+        <div class="sl-overlay"></div>
+
+        <!-- Fin contenido -->
+      </div>
+    </div>
+  </main>
+  <div class="tr-overlay"></div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/tabby.polyfills.min.js"></script>
+  <script src="js/interactividad.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script>
+
+    //Tabs  
+    var tabs = new Tabby('[data-tabs]');
+    // Create a timeline with default parameters
+    var tl = anime.timeline({
+      easing: 'linear'
+    });
+
+    // Add children
+    tl.add({
+      targets: 'main',
+      opacity: [0, 1],
+      duration: 800,
+      delay: 800
+    });
+    //Slider
+    
+    $('.slider-proyectos').slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      fade: true
+    });
+
+
+  </script>
+</body>
+
+</html>
