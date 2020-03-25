@@ -157,16 +157,16 @@ h1, h2 {
     background-color: #f6a92f;
 }
 
-.tr-overlay.index {
+.tr-overlay.index, .tr-overlay.desarrollados {
     background: #C5C8CD;
 }
 
-.tr-overlay.ubicacion, .tr-overlay.galeria, .tr-overlay.zonas {
-    background: #0c2430;
+.tr-overlay.venta {
+    background: #3c464c;
 }
 
-.tr-overlay.plantas {
-    background: #e7e1d3;
+.tr-overlay[class*="proyecto"] {
+    background: #ffffff;
 }
 
 /*Fondos*/
@@ -341,8 +341,21 @@ html .slick-prev {
 
 html .slick-prev:before, html .slick-next:before {
     font-size: 40px;
+    color: transparent;
+    border-radius: 100%;
+    opacity: 1;
+    background: white no-repeat center;
+    transition: background-color .5s ease;
 }
-
+html .slick-prev:before {
+    background-image: url(../img/f-amarilla.png);
+}
+html .slick-next:before {
+    background-image: url(../img/f-amarillar.png);
+}
+html .slick-prev:hover:before, html .slick-next:hover:before {
+    background-color: #3c464c;
+}
 html .slick-prev.slick-disabled:before, html .slick-next.slick-disabled:before {
     opacity: 0;
 }
@@ -518,7 +531,7 @@ html .slick-prev.slick-disabled:before, html .slick-next.slick-disabled:before {
 }
 
 #sl-nosotros h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: gothambold;
     margin: 0;
     margin-bottom: 2rem;
@@ -605,7 +618,7 @@ html .slick-prev.slick-disabled:before, html .slick-next.slick-disabled:before {
 }
 /*Proyectos en venta*/
 .sl-proyecto h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: gothambold;
     margin: 0;
     margin-bottom: 2rem;
@@ -625,11 +638,13 @@ html .slick-prev.slick-disabled:before, html .slick-next.slick-disabled:before {
 
 }
 .sl-proyecto .contenido .col-1 {
-    width: 650px;
+    width: 40%;
+    max-width: 650px;
     padding: 0 130px;
 }
 .sl-proyecto .contenido .col-2 {
-    width: 100%;
+    width: 60%;
+    flex-grow:2;
 
 }
 .sl-proyecto .sl-fl {
