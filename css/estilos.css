@@ -34,6 +34,9 @@
 }
 
 /*Generales*/
+*:focus {
+    outline: none;
+}
 html {
     font-size: 16px;
     font-family: gothamlight, sans-serif;
@@ -872,4 +875,14 @@ html .slick-prev.slick-disabled:before, html .slick-next.slick-disabled:before {
     display: inline;
     color: white;
     font-weight: normal;
+}
+#sl-desarrollados .slick-dots {
+    bottom: -48px;
+}
+#sl-desarrollados .slick-dots li button:before {
+    color: #ffffff;
+}
+
+#sl-desarrollados .slick-dots li.slick-active button:before {
+    color: #f6a92f;
 }
