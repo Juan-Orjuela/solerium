@@ -754,3 +754,122 @@ html .slick-prev.slick-disabled:before, html .slick-next.slick-disabled:before {
 .proy-nav a:hover {
     background-color: #3c464c;
 }
+/*Desarrollados*/
+#sl-desarrollados .bg-img {
+    background-image: url(../img/fondo-desarrollados.jpg);
+}
+#sl-desarrollados .contenido {
+    
+    width: calc(100% - 170px);
+    max-width: 1520px;
+    height: 720px;
+    position: relative;
+    margin: 0 auto;
+    align-self: center;
+}
+#sl-desarrollados .slide-cont {
+    width: 100%;
+    height: 720px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#sl-desarrollados .sl-proy-des {
+    width: 50%;
+    padding: 5px;
+    position: relative;
+    
+}
+#sl-desarrollados .sl-proy-des .sl-preview {
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 1s ease;
+}
+#sl-desarrollados .sl-proy-des .sl-preview.oculto {
+    opacity: 0;
+}
+#sl-desarrollados .sl-proy-des .sl-preview span {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-family: gothambold;
+    transform: translate(-50%, -50%);
+}
+#sl-desarrollados .sl-proy-des .sl-preview img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+
+}
+#sl-desarrollados .sl-proy-des .sl-info {
+    display: flex;
+    background: rgba(255, 255, 255, 0.85);
+    height: 100%;
+}
+#sl-desarrollados .sl-proy-des .sl-info .col-1 {
+    position: relative;
+    width: 45%;
+}
+#sl-desarrollados .sl-proy-des .sl-info .col-1 .img-cont {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f6c322;
+}
+#sl-desarrollados .sl-proy-des .sl-info .col-1 .img-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#sl-desarrollados .sl-proy-des .sl-info .col-2 {
+    width: 55%;
+    padding: 30px;
+    font-size: 14px;
+}
+#sl-desarrollados .sl-proy-des .sl-info .col-2 h2 {
+    margin: 0;
+}
+#sl-desarrollados .sl-proy-des .sl-info .col-2 h2,
+#sl-desarrollados .sl-proy-des .sl-info .col-2 h3 {
+    display: inline;
+    font-size: 1.2rem;
+}
+#sl-desarrollados .col-2 ul {
+    padding-left: 1rem;
+}
+#sl-desarrollados .col-2 ul li {
+    position: relative;
+    list-style-type: none;
+}
+#sl-desarrollados .col-2 ul li::before {
+    position: absolute;
+    content: "";
+    background: url(../img/cruz.png) no-repeat left center;
+    width: 1rem;
+    height: 1rem;
+    left: -1rem;
+    top: 0;
+}
+#sl-desarrollados .sl-info h2,
+#sl-desarrollados .sl-info .area {
+    font-family: gothambold;
+    color: #575C65;
+    
+}
+#sl-desarrollados .cornisa {
+    color: white;
+}
+#sl-desarrollados .cornisa h1 {
+    font-size: 1rem;
+    display: inline;
+    color: white;
+    font-weight: normal;
+}
