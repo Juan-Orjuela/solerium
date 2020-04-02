@@ -654,6 +654,7 @@ html .slick-prev.slick-disabled:before, html .slick-next.slick-disabled:before {
     display: flex;
     color: #3c464c;
     margin-bottom: 1rem;
+    border-top: 1px solid #cecece;
 }
 .sl-proyecto .sl-fl > div {
     width: 50%
@@ -713,19 +714,22 @@ html .slick-prev.slick-disabled:before, html .slick-next.slick-disabled:before {
     color: white;
     background-color:#f6a92f;
 }
-.sl-proyecto [role=tabpanel] {
-    height: auto;
+.sl-proyecto .sol-tab {
     max-height: calc(100vh - 360px);
-    max-width: 100%;
+    background: #ededed;
+}
+.sl-proyecto .sol-tab  img{
+    max-height: calc(100vh - 370px);
+    padding: 5px 0 5px 5px;
 }
 .sl-proyecto [role=tabpanel][hidden] {
     display: block;
     height: 0;
     overflow: hidden;
-    
 }
-.sl-proyecto [role=tabpanel] img {
-    max-width: 100%;
+.sl-proyecto .sol-tab img {
+    height: 100%;
+    width: auto;
 }
 .proy-nav {
     position: fixed;
