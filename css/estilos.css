@@ -1004,3 +1004,115 @@ RESPONSIVE
         font-size: 13px;
     }
 }
+
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 14px;
+    }
+
+    .sl-main-nav {
+        width: 40%;
+    }
+
+    .sl-main-nav ul a {
+        font-size: 1.1rem;
+    }
+
+    /*Home*/
+    #sl-home .sl-home ul li a {
+        padding: 50px 0;
+    }
+
+    #sl-home .dot {
+        left: -60px;
+    }
+
+    /*Nosotros*/
+    #sl-nosotros .contenido {
+        background: white;
+        min-height: initial;
+        align-self: center;
+        margin-left: 100px;
+        padding: 30px 90px 60px 30px;
+        position: relative;
+        width: 100%;
+        width: calc(100% - 100px);
+        box-sizing: border-box;
+    }
+
+    #sl-nosotros h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    #sl-nosotros .sl-slide-ap {
+        min-height: initial;
+    }
+
+    #sl-nosotros .contenido .slide-footer {
+        left: 30px;
+        bottom: 15px;
+        right: 280px;
+    }
+
+    /*Venta detalle*/
+    .sl-proyecto .contenido .col-1 {
+        padding: 0 40px;
+    }
+
+    .sl-proyecto h1 {
+        font-size: 2.2rem;
+    }
+
+    html .slick-next, html .slick-prev {
+        width: 30px;
+        height: 30px;
+    }
+
+    html .slick-prev:before, html .slick-next:before {
+        font-size: 30px;
+        ; }
+
+    html .slick-next {
+        right: 10px;
+    }
+
+    html .slick-prev {
+        left: 10px;
+    }
+
+    /*Desarrollados*/
+    #sl-desarrollados .sl-proy-des .sl-info .col-2 h4, #sl-sociedad .sl-proy-des .sl-info .col-2 h4 {
+        margin: 0;
+    }
+
+    #sl-desarrollados .sl-proy-des .sl-info .col-2 ul, #sl-sociedad .sl-proy-des .sl-info .col-2 ul {
+        margin: 6px 0;
+    }
+
+    #sl-desarrollados .sl-proy-des .sl-info .col-2 p, #sl-sociedad .sl-proy-des .sl-info .col-2 p {
+        margin: 0;
+    }
+
+    #sl-desarrollados .contenido, #sl-sociedad .contenido {
+        width: 95%;
+    }
+
+    #sl-desarrollados .slick-dots, #sl-sociedad .slick-dots {
+        bottom: -28px;
+        text-align: right;
+    }
+
+    #sl-desarrollados .sl-volver, #sl-sociedad .sl-volver {
+        bottom: 18px;
+    }
+
+    #sl-desarrollados .sl-proy-des .sl-info .col-2, #sl-sociedad .sl-proy-des .sl-info .col-2 {
+        padding: 8px 15px;
+        font-size: 12.5px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 16px;
+    }
+}
