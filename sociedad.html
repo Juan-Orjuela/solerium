@@ -945,7 +945,13 @@
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
-      arrows: false
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1000,
+          settings: "unslick"
+        }
+      ]
     });
 
     $('.sl-preview').on("click", function(){

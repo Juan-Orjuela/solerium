@@ -527,7 +527,7 @@ html .slick-prev.slick-disabled:before, html .slick-next.slick-disabled:before {
 
 #sl-nosotros .sl-fl {
     display: flex;
-    direction: row;
+    flex-direction: row;
 }
 
 #sl-nosotros .col-1 {
@@ -1029,7 +1029,7 @@ RESPONSIVE
 
     /*Nosotros*/
     #sl-nosotros .contenido {
-        background: white;
+        background: #ffffff;
         min-height: initial;
         align-self: center;
         margin-left: 100px;
@@ -1114,5 +1114,237 @@ RESPONSIVE
 
     .slick-dots li button:before {
         font-size: 16px;
+    }
+}
+
+/*MOBILE BREAKPOINT*/
+@media screen and (max-width: 1000px) {
+    /*HOME*/ #sl-home .sl-f1 img {
+        margin-bottom: 20px;
+        max-width: 100%;
+        width: 280px;
+    }
+
+    #sl-home .sl-f1 span {
+        color: #ffffff;
+        margin-left: 0;
+    }
+
+    #sl-home .sl-cont {
+        padding: 0 20px;
+    }
+
+    #sl-home .dot {
+        display: none;
+    }
+
+    #sl-home .sl-home ul li a {
+        padding: 40px 0;
+    }
+
+    /*Nosotros*/
+    #sl-nosotros .sl-cont {
+        height: initial;
+        overflow: auto;
+        flex-direction: column;
+    }
+
+    #sl-nosotros .contenido {
+        background: #ffffff;
+        min-height: initial;
+        align-self: center;
+        margin: 80vh auto 0;
+        margin-top: calc(100vh - 115px);
+        padding: 30px;
+        width: calc(100% - 200px);
+        max-width: 690px;
+        box-sizing: border-box;
+    }
+
+    #sl-nosotros .sl-slide-ap:first-child {
+        border : none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #sl-nosotros .sl-slide-ap {
+        opacity: 1 !important;
+        border-top: 1px solid #9aa1ac;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    #sl-nosotros .sl-fl {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sl-nosotros .col-1 {
+        max-width: initial;
+    }
+
+    #sl-nosotros .col-2 {
+        padding: 20px 0;
+        max-width: initial;
+    }
+
+    #sl-nosotros .contenido .slide-footer {
+        left: initial;
+        bottom: initial;
+        position: relative;
+        right: initial;
+        margin-top: 2rem;
+    }
+
+    #sl-nosotros main {
+        background: url(../img/fondo-nosotros.jpg);
+        background-size: cover;
+        background-attachment: fixed
+    }
+
+    #sl-nosotros .credito {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        padding: 0 12px;
+        box-sizing: border-box;
+        margin: 30px auto;
+        background: #f7a930;
+        width: calc(100% - 200px);
+        max-width: 690px;
+    }
+
+    /*Venta detalle*/
+    .sl-proyecto .sl-cont {
+        height: initial;
+        overflow: initial;
+        flex-direction: column;
+    }
+
+    .sl-proyecto .contenido .sl-fl-gran {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 90px 0 20px;
+        padding: 0 80px;
+    }
+
+    .sl-proyecto .contenido .col-1 {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 ;
+        margin-bottom: 40px;
+    }
+
+    .sl-proyecto .contenido .col-2 {
+        width: 100%;
+        flex-grow: initial;
+    }
+
+    .sl-proyecto ul[role=tablist] {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sl-proyecto #tab-nav li {
+        width: 33%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sl-proyecto #tab-nav li a {
+        width: 100%;
+        min-width: initial;
+    }
+
+    .sl-proyecto .sol-tab {
+        max-height: 100vh;
+        background: #ededed;
+    }
+
+    .sl-proyecto .sol-tab img {
+        max-height: 400px;
+    }
+
+    .sl-proyecto .cornisa {
+        position: relative;
+        width: 100px;
+    }
+
+    .sl-proyecto .proy-nav {
+        position: relative;
+        right: initial;
+        bottom: initial;
+        height: 40px;
+        width: 140px;
+        display: flex;
+        align-self: flex-end;
+        margin: 15px 15px 25px;
+    }
+
+    .sl-volver {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    /*Desarrollados*/
+    #sl-desarrollados .sl-cont,
+    #sl-sociedad .sl-cont {
+        height: initial;
+        overflow: initial;
+        flex-direction: column;
+    }
+
+    #sl-desarrollados .contenido, #sl-sociedad .contenido {
+        width: 100%;
+        padding: 0 80px;
+        max-height: initial;
+        height: initial;
+        position: relative;
+        margin: 30px auto 60px;
+        align-self: center;
+    }
+
+    #sl-desarrollados .cornisa,
+    #sl-sociedad .cornisa {
+        position: relative;
+        width: 200px;
+        top: initial;
+        left: 0;
+        margin: 20px;
+    }
+
+    #sl-desarrollados .slide-cont, #sl-sociedad .slide-cont {
+        width: 100%;
+        max-height: initial;
+        height: initial;
+    }
+
+    #sl-desarrollados .sl-proy-des, #sl-sociedad .sl-proy-des {
+        width: 100%;
+        padding: 5px;
+        position: relative;
+        min-height: 30vw;
+    }
+
+    #sl-desarrollados .sl-proy-des .sl-info .col-1, #sl-sociedad .sl-proy-des .sl-info .col-1 {
+        width: 45%;
+    }
+
+    #sl-desarrollados .sl-proy-des .sl-info .col-2, #sl-sociedad .sl-proy-des .sl-info .col-2 {
+        width: 55%;
+        font-size: 16px;
+        padding: 30px;
+    }
+
+    #sl-desarrollados .sl-proy-des .sl-info .col-2 h4, #sl-sociedad .sl-proy-des .sl-info .col-2 h4 {
+        margin: 16px 0;
+    }
+
+    #sl-desarrollados .sl-proy-des .sl-info .col-2 ul, #sl-sociedad .sl-proy-des .sl-info .col-2 ul {
+        margin: 16px 0;
+    }
+    #sl-desarrollados .sl-preview span {
+        font-size: 18px;
     }
 }
