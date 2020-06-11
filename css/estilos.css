@@ -1288,8 +1288,7 @@ RESPONSIVE
     }
 
     /*Desarrollados*/
-    #sl-desarrollados .sl-cont,
-    #sl-sociedad .sl-cont {
+    #sl-desarrollados .sl-cont, #sl-sociedad .sl-cont {
         height: initial;
         overflow: initial;
         flex-direction: column;
@@ -1305,8 +1304,7 @@ RESPONSIVE
         align-self: center;
     }
 
-    #sl-desarrollados .cornisa,
-    #sl-sociedad .cornisa {
+    #sl-desarrollados .cornisa, #sl-sociedad .cornisa {
         position: relative;
         width: 200px;
         top: initial;
@@ -1344,7 +1342,181 @@ RESPONSIVE
     #sl-desarrollados .sl-proy-des .sl-info .col-2 ul, #sl-sociedad .sl-proy-des .sl-info .col-2 ul {
         margin: 16px 0;
     }
+
     #sl-desarrollados .sl-preview span {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    #sl-home .sl-home ul {
+        flex-wrap :wrap;
+    }
+
+    #sl-home .sl-home ul li {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    #sl-home .sl-home ul li span {
+        position: absolute;
+        top: 2px;
+        bottom: 2px;
+        left: 2px;
+        right: 2px;
+        width: initial;
+        height: initial;
+        transform: translateX(-105%);
+    }
+
+    #sl-home .sl-home ul li a {
+        padding: 20px 0;
+    }
+
+    #sl-home .sl-home {
+        margin: 20px auto;
+    }
+
+    .sl-main-nav {
+        width: 50%;
+        padding-left: 25px
+    }
+
+    .sl-nav-btn {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    .hamburger-box {
+        width: 20px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        width: 20px;
+        height: 2px;
+    }
+
+    .hamburger-inner::before {
+        top: -7px;
+    }
+
+    .hamburger-inner::after {
+        bottom: -7px;
+    }
+
+    /*Nosotros*/
+    #sl-nosotros .contenido {
+        background: #ffffff;
+        min-height: initial;
+        align-self: center;
+        margin: 80vh auto 0;
+        margin-top: calc(100vh - 115px);
+        padding: 30px;
+        width: calc(100% - 88px);
+        max-width: 690px;
+        box-sizing: border-box;
+    }
+
+    .sl-volver {
+        width: 30px;
+        height: 30px;
+        left: 7px;
+    }
+
+    /*Venta*/
+    #sl-venta .sl-cont {
+        height: initial;
+        overflow: auto;
+        flex-direction: column;
+    }
+
+    #sl-venta .contenido {
+        width: 100%;
+        max-width: 1240px;
+        max-height: initial;
+        height: initial;
+        position: relative;
+        margin: 40px auto 20px;
+        padding: 0 40px;
+    }
+
+    #sl-venta .contenido ul li {
+        padding: 5px;
+        width: 50%;
+        box-sizing: border-box;
+        height: 150px;
+        display: flex;
+    }
+
+    #sl-venta .contenido ul li a {
+        padding: 15px;
+        text-align: center
+    }
+
+    #sl-venta .contenido ul li.vacio {
+        display: none
+    }
+
+    #sl-venta .cornisa {
+        position: relative;
+        width: 200px;
+        top: initial;
+        left: 0;
+        margin: 30px 0 0 40px;
+        align-self: flex-start;
+    }
+
+    .credito {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin: 10px 45px 25px;
+        align-self: flex-end;
+    }
+
+    /*venta detalle*/
+    .sl-proyecto .contenido .sl-fl-gran {
+        padding: 0 50px;
+    }
+
+    .sl-proyecto .proy-nav {
+        margin: 15px 15px 20px;
+    }
+
+    .sl-proyecto .pesti {
+        font-size: 13px;
+        line-height: 1.3;
+        min-height: 45px;
+    }
+
+    /*Desarrollados*/
+    #sl-desarrollados .contenido, #sl-sociedad .contenido {
+        width: 100%;
+        padding: 0 40px;
+        max-height: initial;
+        height: initial;
+        position: relative;
+        margin: 30px auto 60px;
+        align-self: center;
+    }
+    #sl-desarrollados .sl-proy-des .sl-info,
+    #sl-sociedad .sl-proy-des .sl-info {
+        flex-direction: column;
+    }
+    #sl-desarrollados .sl-proy-des .sl-info .col-1, 
+    #sl-sociedad .sl-proy-des .sl-info .col-1 {
+        width: 100%;
+        min-height: 50vw;
+    }
+
+    #sl-desarrollados .sl-proy-des .sl-info .col-2, 
+    #sl-sociedad .sl-proy-des .sl-info .col-2 {
+        width: 100%;
+        font-size: 14px;
+        padding: 20px;
     }
 }
