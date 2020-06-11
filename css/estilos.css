@@ -1503,20 +1503,70 @@ RESPONSIVE
         margin: 30px auto 60px;
         align-self: center;
     }
-    #sl-desarrollados .sl-proy-des .sl-info,
-    #sl-sociedad .sl-proy-des .sl-info {
+
+    #sl-desarrollados .sl-proy-des .sl-info, #sl-sociedad .sl-proy-des .sl-info {
         flex-direction: column;
     }
-    #sl-desarrollados .sl-proy-des .sl-info .col-1, 
-    #sl-sociedad .sl-proy-des .sl-info .col-1 {
+
+    #sl-desarrollados .sl-proy-des .sl-info .col-1, #sl-sociedad .sl-proy-des .sl-info .col-1 {
         width: 100%;
         min-height: 50vw;
     }
 
-    #sl-desarrollados .sl-proy-des .sl-info .col-2, 
-    #sl-sociedad .sl-proy-des .sl-info .col-2 {
+    #sl-desarrollados .sl-proy-des .sl-info .col-2, #sl-sociedad .sl-proy-des .sl-info .col-2 {
         width: 100%;
         font-size: 14px;
         padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sl-main-nav {
+        width: 80%;
+        padding-left: 25px;
+    }
+
+    #sl-home .sl-home ul li a {
+        padding: 10px 0;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    #sl-nosotros h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #sl-nosotros .credito {
+        width: calc(100% - 90px);
+        font-size: 12px;
+    }
+
+    #sl-nosotros .contenido {
+        padding: 30px 15px;
+        margin-top: calc(100vh - 105px);
+    }
+
+    #sl-venta .contenido ul li {
+        width: 100%;
+    }
+
+    .sl-proyecto #tab-nav {
+        flex-wrap: wrap;
+    }
+
+    .sl-proyecto #tab-nav li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sl-proyecto .pesti {
+        margin-top: 4px;
+        min-height: initial;
+    }
+
+    .sl-proyecto .sol-tab img {
+        max-height: 100vw;
     }
 }
